@@ -5,12 +5,10 @@ class Matrix:
         self.width = width
         self.values = values
 
-
     def __str__(self):
         res = ""
         for i in range(self.height):
             for j in range(self.width):
-                res+= str(self.values[i][j]) + " "
-            res+= "\n"
+                res += str(self.values[i][j]) + " "
+            res += "\n"
         return res
-
